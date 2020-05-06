@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_correio/principal_page_page.dart';
+import 'package:projeto_correio/Registrar_page.dart';
+
+import 'entrar_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,13 +21,16 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class InicialPage extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Bem Vindo!'),
+        backgroundColor: Colors.lightBlue[900],
       ),
       body: Padding(
             padding: const EdgeInsets.all(11.0),
@@ -41,7 +46,7 @@ class InicialPage extends StatelessWidget {
                color: Colors.cyanAccent[700],
               onPressed: () {
   
-              Navigator.push(context, CupertinoPageRoute(builder: (context) => (EntrarPage())));
+              Navigator.push(context, CupertinoPageRoute(builder: (context) => (MeuForm())));
   
             },
   
@@ -59,7 +64,7 @@ class InicialPage extends StatelessWidget {
               color: Colors.cyanAccent[700],
               onPressed: () {
   
-              Navigator.push(context, CupertinoPageRoute(builder: (context) => (Registrarpage())));
+              Navigator.push(context, CupertinoPageRoute(builder: (context) => (MeuForm2())));
   
             },
   
@@ -77,120 +82,6 @@ class InicialPage extends StatelessWidget {
   }
 }
 
-class EntrarPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('Entrar'),
-      ),
-      body: Padding(
-              padding: EdgeInsets.all(11),
-       child: Center(       
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-                 mainAxisAlignment: MainAxisAlignment.center,
 
-            children:[  
-  
-            TextFormField(
-              autofocus: true,
-              decoration: InputDecoration(border: InputBorder.none, hintText: 'Email'),
-  
-            ),
-            Divider(),
-            TextFormField(
-              autofocus: true,
-              obscureText: true,
-              decoration: InputDecoration(border: InputBorder.none, hintText: 'Senha'),
-  
-            ),
-            Divider(),
-            ButtonTheme(
-              height: 60.0,
-             child: RaisedButton(
-               color: Colors.cyanAccent[700],
-              onPressed: () {
-  
-              Navigator.push(context, CupertinoPageRoute(builder: (context) => (Principalpage())));
-              return Principalpage();
-  
-            },
-  
-            child: Text(
-              'Continuar',
-              style: TextStyle(color: Colors.black),
-              ),
-  
-          ),
-             ),
-         ],
-          ),
-        ),
-      ),
-        );
-  }
-}
 
-class Registrarpage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('Entrar'),
-      ),
-      body: Padding(
-              padding: EdgeInsets.all(11),
-       child: Center(       
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-                 mainAxisAlignment: MainAxisAlignment.center,
 
-            children:[  
-              TextFormField(
-              autofocus: true,
-              decoration: InputDecoration(border: InputBorder.none, hintText: 'Nome'),
-  
-            ),
-             Divider(),
-  
-            TextFormField(
-              autofocus: true,
-              decoration: InputDecoration(border: InputBorder.none, hintText: 'Email'),
-  
-            ),
-            Divider(),
-            TextFormField(
-              autofocus: true,
-              obscureText: true,
-              decoration: InputDecoration(border: InputBorder.none, hintText: 'Senha'),
-  
-            ),
-            Divider(),
-            ButtonTheme(
-              height: 60.0,
-             child: RaisedButton(
-               color: Colors.cyanAccent[700],
-              onPressed: () {
-  
-              Navigator.push(context, CupertinoPageRoute(builder: (context) => (Principalpage())));
-              return Principalpage();
-  
-            },
-  
-            child: Text(
-              'Continuar',
-              style: TextStyle(color: Colors.black),
-              ),
-  
-          ),
-             ),
-         ],
-          ),
-        ),
-      ),
-        );
-  }
-}

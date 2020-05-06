@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162966396787",
+    "firebase_url": "https://projeto-correios1.firebaseio.com",
+    "project_id": "projeto-correios1",
+    "storage_bucket": "projeto-correios1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162966396787:android:69da76322787207131ef06",
+        "android_client_info": {
+          "package_name": "com.example.projeto_correio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162966396787-u01a47biuauchj36v1rq9mg1sanutngh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnDeV96qwYlQ6wRzrkZBYgSabH-i3ywwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162966396787-u01a47biuauchj36v1rq9mg1sanutngh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
